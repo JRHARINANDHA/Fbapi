@@ -1,0 +1,136 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Profile"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+       <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/profilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/title"
+           android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name    :"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/profilePic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/idname" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/idname"
+            android:layout_toEndOf="@+id/idname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/idgender" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/idgender"
+            android:layout_toEndOf="@+id/idgender" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email    :"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/gender"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/idemail" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/idemail"
+            android:layout_toEndOf="@+id/idemail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB        :"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iddob"
+            android:layout_below="@+id/idemail"
+             />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB:"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/iddob"
+            android:layout_toEndOf="@+id/iddob"
+            />
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
